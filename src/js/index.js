@@ -249,8 +249,9 @@ window.addEventListener('load', () => {
   state.likes.reloadLikes();
 
   //toggle the lives view
-  likeView.toggleLikesMenu(state.likes.getNumLikes());
+  // likeView.toggleLikesMenu(state.likes.getNumLikes());
   // console.log(state.likes)
+
   //render the likes view
   state.likes.likes.forEach(like => likeView.renderLikes(like));
 })

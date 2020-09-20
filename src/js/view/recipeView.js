@@ -53,7 +53,8 @@ const createIngredient = ingredient => `
 
 export const renderRecipe = (recipe, isLiked) => {
     const markup = `
-            <figure class="recipe__fig">
+    <div class ="animate__animated animate__fadeIn">
+            <figure class="recipe__fig ">
                 <img src="${recipe.img}" alt="${recipe.title}" class="recipe__img">
                 <h1 class="recipe__title">
                     <span>${recipe.title}</span>
@@ -129,6 +130,7 @@ export const renderRecipe = (recipe, isLiked) => {
 
                 </a>
             </div>
+    </div>
     `
 
     elements.recipe.insertAdjacentHTML('afterbegin', markup);

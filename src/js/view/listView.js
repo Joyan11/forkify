@@ -5,7 +5,7 @@ import {
 
 export const renderItem = item => {
     const markup = `
-    <li class="shopping__item" data-itemid=${item.id}>
+    <li class="shopping__item animate__animated animate__fadeIn" data-itemid=${item.id}>
     <div class="shopping__count" >
         <input type="number" min='1' value="${item.count}" step="${item.count}" class='shopping-cart-value'>
         <p>${item.unit}</p>

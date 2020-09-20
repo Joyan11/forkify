@@ -50,7 +50,7 @@ export const limitRecipeTitle = (title, limit = 18) => {
 
 const renderRecipe = (recipe) => {
   const markup = `
-    <li class='animate__animated animate__bounceInLeft'>
+    <li class='animate__animated animate__fadeIn'>
     <a class="results__link " href="#${recipe.recipe_id}">
         <figure class="results__fig">
             <img src="${recipe.image_url}" alt="${recipe.title}">

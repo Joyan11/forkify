@@ -17,9 +17,9 @@ export const toggle = isLiked => {
 
 
 // tottle the likemenu 
-export const toggleLikesMenu = numOfLikes => {
-    elements.likesMenu.style.visibility = numOfLikes > 0 ? 'visible' : 'hidden';
-}
+// export const toggleLikesMenu = numOfLikes => {
+//     elements.likesMenu.style.visibility = numOfLikes > 0 ? 'visible' : 'hidden';
+// }
 
 //adddng likes to the ui
 export const renderLikes = like => {
