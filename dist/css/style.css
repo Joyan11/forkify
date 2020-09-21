@@ -67,6 +67,12 @@ body {
   transition: all .2s;
 }
 
+
+.clear__btn {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
 .btn:hover,
 .btn-small:hover {
   transform: scale(1.05);

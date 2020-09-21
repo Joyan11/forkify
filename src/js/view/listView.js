@@ -21,6 +21,21 @@ export const renderItem = item => {
     elements.shopping.insertAdjacentHTML('beforeend', markup);
 }
 
+export const renderClearButton = () => {
+    const markup = `
+
+                <button class="btn clear__list">
+                    <span>Clear</span>
+                </button>
+            `
+    elements.clearList.insertAdjacentHTML('beforeend', markup);
+}
+
+export const clearButton = () => {
+    elements.clearList.innerHTML = "";
+}
+
+
 
 // we get the id to delete the item
 export const deleteItem = id => {

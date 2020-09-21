@@ -17,7 +17,7 @@ const state = {
 
 };
 
-
+window.state = state;
 // console.log(state);
 
 
@@ -192,7 +192,11 @@ const controlList = () => {
   const item = state.recipe.ingredients.forEach(el => {
     let item = state.list.addItem(el.count, el.unit, el.ingredient);
     listView.renderItem(item);
+
   });
+  listView.clearButton();
+  listView.renderClearButton();
+
 
 }
 
@@ -285,6 +289,7 @@ elements.recipe.addEventListener('click', e => {
     delete state.list;
     listView.clearList();
     controlList();
+
   } else if (e.target.matches('.recipe__love, .recipe__love *')) {
 
     controlLikes();
@@ -319,3 +324,19 @@ elements.shopping.addEventListener('click', e => {
 
 
 // window.l = new List();
+
+
+/*
+
+  CLear list button
+
+*/
+
+elements.clearList.addEventListener('click', e => {
+  if (e.target.matches('.clear__list,.clear__list *')) {
+
+    delete state.list;
+    listView.clearList();
+    listView.clearButton();
+  }
+})
